@@ -34,7 +34,7 @@ const getCategoryEmoji = (category: string): string => {
   }
 };
 
-export function IngredientTable({ ingredients, dailyGoal }: IngredientTableProps) {
+export function IngredientTable({ ingredients, dailyGoal: _dailyGoal }: IngredientTableProps) {
   const [searchTerm, setSearchTerm] = useState('');
 
   const groupedIngredients = useMemo(() => {

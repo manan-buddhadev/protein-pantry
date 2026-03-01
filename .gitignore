@@ -23,3 +23,7 @@ dist/
 
 # Logs
 *.log
+
+mockups/
+PROJECT_ANALYSIS.md
+docs/

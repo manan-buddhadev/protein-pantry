@@ -46,60 +46,55 @@ export function Recipes() {
   }, [recipes, searchTerm]);
 
   return (
-    <div className="container">
-      <div className="page-header">
-        <h1 className="page-title">Recipes</h1>
-      </div>
-
-      {error && (
-        <div className="error">
-          <div className="error-title">Error</div>
-          <div>{error}</div>
-          <button
-            onClick={loadRecipes}
-            style={{
-              marginTop: '0.5rem',
-              padding: '0.5rem 1rem',
-              backgroundColor: 'var(--primary-color)',
-              color: 'white',
-              border: 'none',
-              borderRadius: '0.375rem',
-              cursor: 'pointer',
-            }}
-          >
-            Retry
-          </button>
+    <div className="page-recipes">
+      <div className="container">
+        <div className="page-header page-recipes-header">
+          <h1 className="page-title page-recipes-title">Recipes</h1>
         </div>
-      )}
 
-      {loading && <div className="loading">Loading recipes...</div>}
-
-      {!loading && !error && (
-        <>
-          <div className="search-box" style={{ marginBottom: '1.5rem' }}>
-            <input
-              type="text"
-              placeholder="Search recipes by name or ingredient..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="search-input"
-            />
-            {filteredRecipes.length > 0 && (
-              <div style={{ marginTop: '0.5rem', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
-                {filteredRecipes.length} recipe{filteredRecipes.length !== 1 ? 's' : ''}
-              </div>
-            )}
+        {error && (
+          <div className="error">
+            <div className="error-title">Error</div>
+            <div>{error}</div>
+            <button
+              onClick={loadRecipes}
+              className="btn-retry-recipes"
+            >
+              Retry
+            </button>
           </div>
+        )}
 
-          {filteredRecipes.length === 0 ? (
-            <div className="empty-state">
-              <p>No recipes found matching "{searchTerm}"</p>
+        {loading && <div className="loading page-recipes-loading">Loading recipes...</div>}
+
+        {!loading && !error && (
+          <>
+            <div className="search-box page-recipes-search">
+              <input
+                type="text"
+                placeholder="Search recipes by name or ingredient..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="search-input"
+                aria-label="Search recipes"
+              />
+              {filteredRecipes.length > 0 && (
+                <div className="page-recipes-count">
+                  {filteredRecipes.length} recipe{filteredRecipes.length !== 1 ? 's' : ''}
+                </div>
+              )}
             </div>
-          ) : (
-            <RecipeList recipes={filteredRecipes} />
-          )}
-        </>
-      )}
+
+            {filteredRecipes.length === 0 ? (
+              <div className="empty-state">
+                <p>No recipes found matching &quot;{searchTerm}&quot;</p>
+              </div>
+            ) : (
+              <RecipeList recipes={filteredRecipes} />
+            )}
+          </>
+        )}
+      </div>
     </div>
   );
 }
