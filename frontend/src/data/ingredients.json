@@ -1,0 +1,17 @@
+[
+  {"id": "paneer", "name": "Paneer", "proteinPer100g": 20},
+  {"id": "chickpeas", "name": "Chickpeas", "proteinPer100g": 8.5},
+  {"id": "rajma", "name": "Rajma", "proteinPer100g": 8.7},
+  {"id": "kala-chana", "name": "Kala Chana", "proteinPer100g": 8},
+  {"id": "moong-dal", "name": "Moong Dal", "proteinPer100g": 7},
+  {"id": "toor-dal", "name": "Toor Dal", "proteinPer100g": 6},
+  {"id": "masoor-dal", "name": "Masoor Dal", "proteinPer100g": 8},
+  {"id": "firm-tofu", "name": "Firm Tofu", "proteinPer100g": 16},
+  {"id": "silken-tofu", "name": "Silken Tofu", "proteinPer100g": 4.5},
+  {"id": "cottage-cheese", "name": "Cottage Cheese", "proteinPer100g": 12},
+  {"id": "siggis-skyr", "name": "Siggi's Vanilla Skyr", "proteinPer100g": 10},
+  {"id": "fairlife-milk", "name": "Fairlife Milk", "proteinPer100g": 5.75},
+  {"id": "goodles-pasta", "name": "Goodles Pasta", "proteinPer100g": 18},
+  {"id": "fairlife-protein-shake", "name": "Fairlife Protein Shake", "proteinPer100g": 30},
+  {"id": "black-beans", "name": "Black Beans", "proteinPer100g": 5}
+]

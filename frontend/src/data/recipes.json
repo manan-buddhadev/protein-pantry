@@ -1,0 +1,12 @@
+[
+  {"id": "spicy-queso-protein-pasta", "name": "Spicy Queso Protein Pasta", "url": "https://myvegetarianroots.com/spicy-queso-protein-pasta/", "ingredients": [{"ingredientId": "goodles-pasta", "grams": 340}, {"ingredientId": "fairlife-milk", "grams": 110}, {"ingredientId": "cottage-cheese", "grams": 110}, {"ingredientId": "silken-tofu", "grams": 110}]},
+  {"id": "thai-red-curry", "name": "Thai Red Curry", "url": "https://cookieandkate.com/thai-red-curry-recipe/", "ingredients": [{"ingredientId": "firm-tofu", "grams": 400}]},
+  {"id": "tofu-krapow", "name": "Tofu Krapow", "url": "https://myvegetarianroots.com/thai-basil-tofu-tofu-pad-krapow/", "ingredients": [{"ingredientId": "firm-tofu", "grams": 400}]},
+  {"id": "tofu-banh-mi-bowl", "name": "Tofu Banh-Mi Bowl", "url": "https://thechutneylife.com/tofu-banh-mi-bowls/", "ingredients": [{"ingredientId": "firm-tofu", "grams": 400}]},
+  {"id": "burrito-bowl", "name": "Mexican Burrito Bowl", "url": "https://rainbowplantlife.com/vegan-burrito-bowl/#wprm-recipe-container-26696", "ingredients": [{"ingredientId": "black-beans", "grams": 850}]},
+  {"id": "palak-paneer", "name": "Palak Paneer", "url": "https://www.indianhealthyrecipes.com/palak-paneer-recipe-easy-paneer-recipes-step-by-step-pics/", "ingredients": [{"ingredientId": "paneer", "grams": 300}]},
+  {"id": "dal-palak", "name": "Dal Palak", "url": "", "ingredients": [{"ingredientId": "masoor-dal", "grams": 10}, {"ingredientId": "moong-dal", "grams": 10}, {"ingredientId": "toor-dal", "grams": 10}]},
+  {"id": "rasam", "name": "Rasam", "url": "", "ingredients": [{"ingredientId": "masoor-dal", "grams": 10}, {"ingredientId": "moong-dal", "grams": 10}, {"ingredientId": "toor-dal", "grams": 10}]},
+  {"id": "rajma", "name": "Rajma", "url": "", "ingredients": [{"ingredientId": "rajma", "grams": 300}]},
+  {"id": "chole", "name": "Chole", "url": "", "ingredients": [{"ingredientId": "chickpeas", "grams": 300}]}
+]
