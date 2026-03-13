@@ -25,7 +25,7 @@ const CATEGORY_ORDER = ['Dairy', 'Cooked Legumes & Pulses', 'Soy Products', 'Oth
 
 export function IngredientCardGrid({
   ingredients,
-  dailyGoalGrams: _dailyGoalGrams,
+  dailyGoalGrams,
 }: IngredientCardGridProps) {
   const [searchTerm, setSearchTerm] = useState('');
 
