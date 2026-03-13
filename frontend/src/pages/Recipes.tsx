@@ -52,6 +52,10 @@ export function Recipes() {
           <h1 className="page-title page-recipes-title">Recipes</h1>
         </div>
 
+        <div className="alert-info">
+          <strong>Note:</strong> Ingredient quantities in recipes are estimates.
+        </div>
+
         {error && (
           <div className="error">
             <div className="error-title">Error</div>

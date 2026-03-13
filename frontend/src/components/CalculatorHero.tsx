@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import type { ActivityLevel } from '../types';
 
 interface CalculatorHeroProps {
@@ -8,15 +9,12 @@ interface CalculatorHeroProps {
   activity: ActivityLevel;
   onActivityChange: (a: ActivityLevel) => void;
   dailyGoalGrams: number;
-  /** When set (e.g. Advanced Mode on), hero shows meal total and ratio to goal. */
-  mealTotalProteinGrams?: number;
 }
 
 const ACTIVITY_LABELS: Record<ActivityLevel, string> = {
   light: 'Light',
-  moderate: 'Moderate',
   active: 'Active',
-  intense: 'Intense',
+  muscleGain: 'Muscle Gain',
 };
 
 export function CalculatorHero({
@@ -27,12 +25,20 @@ export function CalculatorHero({
   activity,
   onActivityChange,
   dailyGoalGrams,
-  mealTotalProteinGrams,
 }: CalculatorHeroProps) {
   const displayWeight = unit === 'lbs' ? weightKg * 2.205 : weightKg;
+  const [inputValue, setInputValue] = useState(String(Math.round(displayWeight * 10) / 10));
+
+  useEffect(() => {
+    setInputValue(String(Math.round(displayWeight * 10) / 10));
+  }, [displayWeight, unit]);
+
   const handleWeightInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const v = parseFloat(e.target.value);
-    if (!Number.isNaN(v)) {
+    const value = e.target.value;
+    setInputValue(value);
+    
+    const v = parseFloat(value);
+    if (!Number.isNaN(v) && v > 0) {
       const kg = unit === 'lbs' ? v / 2.205 : v;
       onWeightChange(kg);
     }
@@ -40,9 +46,9 @@ export function CalculatorHero({
 
   const greeting = (() => {
     const hour = new Date().getHours();
-    if (hour < 12) return { text: 'Good morning', emoji: '☀️' };
-    if (hour < 17) return { text: 'Good afternoon', emoji: '🌤️' };
-    return { text: 'Good evening', emoji: '🌙' };
+    if (hour < 12) return { text: 'Good Morning', emoji: '☀️' };
+    if (hour < 17) return { text: 'Good Afternoon', emoji: '🌤️' };
+    return { text: 'Good Evening', emoji: '🌙' };
   })();
 
   return (
@@ -53,18 +59,10 @@ export function CalculatorHero({
       </p>
       <div className="hero-metric">
         <div className="hero-label">
-          {mealTotalProteinGrams !== undefined
-            ? 'This meal / daily goal'
-            : 'Your daily protein goal'}
+          Your minimum daily protein goal
         </div>
         <div className="hero-value">
-          {mealTotalProteinGrams !== undefined ? (
-            <>
-              {mealTotalProteinGrams.toFixed(0)}g / {Math.round(dailyGoalGrams)}g
-            </>
-          ) : (
-            <>~{Math.round(dailyGoalGrams)}g</>
-          )}
+          ~{Math.round(dailyGoalGrams)}g
         </div>
       </div>
       <p className="hero-encourage">
@@ -80,7 +78,7 @@ export function CalculatorHero({
               min="1"
               max={unit === 'kg' ? 300 : 660}
               step={unit === 'kg' ? 1 : 2}
-              value={Math.round(displayWeight * 10) / 10}
+              value={inputValue}
               onChange={handleWeightInput}
               aria-label="Weight"
             />
@@ -107,7 +105,7 @@ export function CalculatorHero({
         <div className="input-group">
           <label>Activity</label>
           <div className="activity-row">
-            {(['light', 'moderate', 'active', 'intense'] as const).map((level) => (
+            {(['light', 'active', 'muscleGain'] as const).map((level) => (
               <button
                 key={level}
                 type="button"

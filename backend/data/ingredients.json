@@ -2,76 +2,101 @@
   {
     "id": "paneer",
     "name": "Paneer",
-    "proteinPer100g": 20
+    "proteinPer100g": 20,
+    "category": "Dairy"
   },
   {
     "id": "chickpeas",
     "name": "Chickpeas",
-    "proteinPer100g": 8.5
+    "proteinPer100g": 8.5,
+    "category": "Cooked Legumes & Pulses"
   },
   {
     "id": "rajma",
     "name": "Rajma",
-    "proteinPer100g": 8.7
+    "proteinPer100g": 8.7,
+    "category": "Cooked Legumes & Pulses"
   },
   {
     "id": "kala-chana",
     "name": "Kala Chana",
-    "proteinPer100g": 8
+    "proteinPer100g": 8,
+    "category": "Cooked Legumes & Pulses"
   },
   {
     "id": "moong-dal",
     "name": "Moong Dal",
-    "proteinPer100g": 7
+    "proteinPer100g": 7,
+    "category": "Cooked Legumes & Pulses"
   },
   {
     "id": "toor-dal",
     "name": "Toor Dal",
-    "proteinPer100g": 6
+    "proteinPer100g": 6,
+    "category": "Cooked Legumes & Pulses"
   },
   {
     "id": "masoor-dal",
     "name": "Masoor Dal",
-    "proteinPer100g": 8
+    "proteinPer100g": 8,
+    "category": "Cooked Legumes & Pulses"
   },
   {
-    "id": "firm-tofu",
-    "name": "Firm Tofu",
-    "proteinPer100g": 16
+    "id": "hf-firm-tofu",
+    "name": "House Foods Firm Tofu",
+    "proteinPer100g": 9.4,
+    "category": "Soy Products"
+  },
+  {
+    "id": "ww-firm-tofu",
+    "name": "Wildwood Firm Tofu",
+    "proteinPer100g": 15,
+    "category": "Soy Products"
   },
   {
     "id": "silken-tofu",
     "name": "Silken Tofu",
-    "proteinPer100g": 4.5
+    "proteinPer100g": 4.5,
+    "category": "Soy Products"
   },
   {
     "id": "cottage-cheese",
     "name": "Cottage Cheese",
-    "proteinPer100g": 12
+    "proteinPer100g": 12,
+    "category": "Dairy"
   },
   {
     "id": "siggis-skyr",
     "name": "Siggi's Vanilla Skyr",
-    "proteinPer100g": 10
+    "proteinPer100g": 10,
+    "category": "Dairy"
   },
   {
     "id": "fairlife-milk",
     "name": "Fairlife Milk",
-    "proteinPer100g": 5.75
+    "proteinPerUnit": 13,
+    "unit": "8oz",
+    "proteinPer100g": 5.42,
+    "category": "Dairy"
   },
   {
     "id": "goodles-pasta",
     "name": "Goodles Pasta",
-    "proteinPer100g": 18
+    "proteinPer100g": 18,
+    "category": "Others"
   },
   {
     "id": "fairlife-protein-shake",
     "name": "Fairlife Protein Shake",
-    "proteinPer100g": 30
+    "proteinPerUnit": 30,
+    "unit": "11.5oz",
+    "proteinPer100g": 8.82,
+    "category": "Dairy"
   },
   {
     "id": "black-beans",
     "name": "Black Beans",
-    "proteinPer100g": 5
+    "proteinPer100g": 5,
+    "category": "Cooked Legumes & Pulses"
   }
 ]

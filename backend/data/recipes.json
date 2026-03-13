@@ -1,5 +1,98 @@
 [
   {
+    "id": "chole",
+    "name": "Chole",
+    "url": "",
+    "ingredients": [
+      {
+        "ingredientId": "chickpeas",
+        "grams": 300
+      }
+    ]
+  },
+  {
+    "id": "dal-palak",
+    "name": "Dal Palak",
+    "url": "",
+    "ingredients": [
+      {
+        "ingredientId": "masoor-dal",
+        "grams": 10
+      },
+      {
+        "ingredientId": "moong-dal",
+        "grams": 10
+      },
+      {
+        "ingredientId": "toor-dal",
+        "grams": 10
+      }
+    ]
+  },
+  {
+    "id": "burrito-bowl",
+    "name": "Mexican Burrito Bowl",
+    "url": "https://rainbowplantlife.com/vegan-burrito-bowl/#wprm-recipe-container-26696",
+    "ingredients": [
+      {
+        "ingredientId": "black-beans",
+        "grams": 850
+      }
+    ]
+  },
+  {
+    "id": "palak-paneer",
+    "name": "Palak Paneer",
+    "url": "https://www.indianhealthyrecipes.com/palak-paneer-recipe-easy-paneer-recipes-step-by-step-pics/",
+    "ingredients": [
+      {
+        "ingredientId": "paneer",
+        "grams": 300
+      }
+    ]
+  },
+  {
+    "id": "rajma",
+    "name": "Rajma",
+    "url": "",
+    "ingredients": [
+      {
+        "ingredientId": "rajma",
+        "grams": 300
+      }
+    ]
+  },
+  {
+    "id": "paneer-tikka",
+    "name": "Paneer Tikka Masala",
+    "url": "",
+    "ingredients": [
+      {
+        "ingredientId": "paneer",
+        "grams": 300
+      }
+    ]
+  },
+  {
+    "id": "rasam",
+    "name": "Rasam",
+    "url": "",
+    "ingredients": [
+      {
+        "ingredientId": "masoor-dal",
+        "grams": 10
+      },
+      {
+        "ingredientId": "moong-dal",
+        "grams": 10
+      },
+      {
+        "ingredientId": "toor-dal",
+        "grams": 10
+      }
+    ]
+  },
+  {
     "id": "spicy-queso-protein-pasta",
     "name": "Spicy Queso Protein Pasta",
     "url": "https://myvegetarianroots.com/spicy-queso-protein-pasta/",
@@ -28,19 +121,8 @@
     "url": "https://cookieandkate.com/thai-red-curry-recipe/",
     "ingredients": [
       {
-        "ingredientId": "firm-tofu",
-        "grams": 400
-      }
-    ]
-  },
-  {
-    "id": "tofu-krapow",
-    "name": "Tofu Krapow",
-    "url": "https://myvegetarianroots.com/thai-basil-tofu-tofu-pad-krapow/",
-    "ingredients": [
-      {
-        "ingredientId": "firm-tofu",
-        "grams": 400
+        "ingredientId": "hf-firm-tofu",
+        "grams": 680
       }
     ]
   },
@@ -50,26 +132,41 @@
     "url": "https://thechutneylife.com/tofu-banh-mi-bowls/",
     "ingredients": [
       {
-        "ingredientId": "firm-tofu",
-        "grams": 400
+        "ingredientId": "hf-firm-tofu",
+        "grams": 680
       }
     ]
   },
   {
-    "id": "burrito-bowl",
-    "name": "Mexican Burrito Bowl",
-    "url": "https://rainbowplantlife.com/vegan-burrito-bowl/#wprm-recipe-container-26696",
+    "id": "tofu-krapow",
+    "name": "Tofu Krapow",
+    "url": "https://myvegetarianroots.com/thai-basil-tofu-tofu-pad-krapow/",
     "ingredients": [
       {
-        "ingredientId": "black-beans",
-        "grams": 850
+        "ingredientId": "hf-firm-tofu",
+        "grams": 680
       }
     ]
   },
   {
-    "id": "palak-paneer",
-    "name": "Palak Paneer",
-    "url": "https://www.indianhealthyrecipes.com/palak-paneer-recipe-easy-paneer-recipes-step-by-step-pics/",
+    "id": "pp-dense-bean-salad",
+    "name": "Pani Puri Dense Bean Salad",
+    "url": "https://milkandcardamom.com/2025/06/16/pani-puri-dense-bean-salad/",
+    "ingredients": [
+      {
+        "ingredientId": "chickpeas",
+        "grams": 100
+      },
+      {
+        "ingredientId": "rajma",
+        "grams": 100
+      }
+    ]
+  },
+  {
+    "id": "veggies-schezwan",
+    "name": "Veggies in Schezwan Sauce",
+    "url": "https://rajshrifood.com/veggies-in-schezwan-sauce-recipe-stir-fry-vegetables-in-spicy-sauce-indo-chinese-vegetable-gravy/",
     "ingredients": [
       {
         "ingredientId": "paneer",
@@ -78,62 +175,24 @@
     ]
   },
   {
-    "id": "dal-palak",
-    "name": "Dal Palak",
-    "url": "",
+    "id": "paneer-hot-garlic-sauce",
+    "name": "Paneer Hot Garlic Sauce",
+    "url": "https://www.youtube.com/watch?v=JQR64Y9yQxQ&t=718s",
     "ingredients": [
       {
-        "ingredientId": "masoor-dal",
-        "grams": 10
-      },
-      {
-        "ingredientId": "moong-dal",
-        "grams": 10
-      },
-      {
-        "ingredientId": "toor-dal",
-        "grams": 10
-      }
-    ]
-  },
-  {
-    "id": "rasam",
-    "name": "Rasam",
-    "url": "",
-    "ingredients": [
-      {
-        "ingredientId": "masoor-dal",
-        "grams": 10
-      },
-      {
-        "ingredientId": "moong-dal",
-        "grams": 10
-      },
-      {
-        "ingredientId": "toor-dal",
-        "grams": 10
-      }
-    ]
-  },
-  {
-    "id": "rajma",
-    "name": "Rajma",
-    "url": "",
-    "ingredients": [
-      {
-        "ingredientId": "rajma",
+        "ingredientId": "paneer",
         "grams": 300
       }
     ]
   },
   {
-    "id": "chole",
-    "name": "Chole",
+    "id": "crispy-tofu-noodle-salad",
+    "name": "Crispy Tofu Noodle Salad",
     "url": "",
     "ingredients": [
       {
-        "ingredientId": "chickpeas",
-        "grams": 300
+        "ingredientId": "hf-firm-tofu",
+        "grams": 340
       }
     ]
   }
