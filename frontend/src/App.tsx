@@ -43,14 +43,8 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <p className="footer-disclaimer">
-          <strong>Disclaimer:</strong> This is not medical advice. This tool is created for the developers' personal use only.
-        </p>
         <p className="footer-text">
-          Developed by Virtee & Manan
-        </p>
-        <p className="footer-text">
-          Inspired by{' '}
+          Developed by Virtee & Manan • Inspired by{' '}
           <a 
             href="https://what-the-whey.vercel.app/" 
             target="_blank" 
@@ -59,6 +53,9 @@ function Footer() {
           >
             what-the-whey
           </a>
+        </p>
+        <p className="footer-disclaimer">
+          This is not medical advice. Created for the developer's personal use only.
         </p>
       </div>
     </footer>

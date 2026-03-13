@@ -2,9 +2,12 @@ export interface Ingredient {
   id: string;
   name: string;
   proteinPer100g: number;
+  proteinPerUnit?: number;
+  unit?: string;
+  category: string;
 }
 
-export type ActivityLevel = 'light' | 'moderate' | 'active' | 'intense';
+export type ActivityLevel = 'light' | 'active' | 'muscleGain';
 
 export interface MealItem {
   ingredientId: string;

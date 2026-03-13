@@ -2,10 +2,9 @@ import type { ActivityLevel } from './types';
 
 /** Protein per kg body weight by activity level (g/kg). */
 export const PROTEIN_PER_KG: Record<ActivityLevel, number> = {
-  light: 1.2,
-  moderate: 1.6,
-  active: 1.8,
-  intense: 2.0,
+  light: 0.8,
+  active: 1.2,
+  muscleGain: 1.6,
 };
 
 export const SERVING_GRAMS = 100;

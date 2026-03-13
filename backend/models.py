@@ -6,6 +6,9 @@ class Ingredient(BaseModel):
     id: str
     name: str
     proteinPer100g: float = Field(..., gt=0)
+    proteinPerUnit: Optional[float] = None
+    unit: Optional[str] = None
+    category: str
 
 
 class RecipeIngredient(BaseModel):
